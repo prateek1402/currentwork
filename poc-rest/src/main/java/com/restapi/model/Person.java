@@ -1,7 +1,13 @@
 package com.restapi.model;
 
-public class Person {
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+@ApiModel
+@Document(collection="personcollection")
+public class Person {
+	@ApiModelProperty(required = true, value = "its contain client id")
 	String clientid;
 	String name;
 	
