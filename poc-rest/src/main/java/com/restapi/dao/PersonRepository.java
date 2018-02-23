@@ -11,4 +11,3 @@ public interface PersonRepository extends MongoRepository<Person, String> {
 	
 	
 }
-
